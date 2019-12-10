@@ -31,9 +31,9 @@ export class TutorsService {
     ): Promise<DefaultResponse> {
         return new Promise((resolve) => {
 
-            let url = `${Api.url}clients`;
+            let url = `${Api.url}tutors`;
             if (filters) {
-                url += "?"
+                url += "?";
             }
             url += filters.start ? `start=${filters.start}&` : "";
             url += filters.limit ? `limit=${filters.limit}` : "";

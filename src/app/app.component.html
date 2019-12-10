@@ -27,18 +27,16 @@
   <main role="main">
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      <div class="container">
-        <div class="container-head">
-          <h1><strong>The place where Tutors and Students meet</strong></h1>
-          <p class="subtitle">
-            Find who can help you take your education to the next level.
-          </p>
-          <p>
-            <a class="btn btn-success btn-lg" href="#" role="button"
-              >Get started now</a
-            >
-          </p>
-        </div>
+      <div class="container-head">
+        <h1><strong>The place where Tutors and Students meet</strong></h1>
+        <p class="subtitle">
+          Find who can help you take your education to the next level.
+        </p>
+        <p>
+          <a class="btn btn-success btn-lg" href="#" role="button"
+            >Get started now</a
+          >
+        </p>
       </div>
     </div>
 
@@ -67,7 +65,7 @@
 
       <hr />
 
-      <div class="row">
+      <div class="row" *ngFor="let tutor of tutors">
         <div class="col col-md-4 card-outside">
           <div class="card" style="width: 18rem;">
             <img
@@ -76,168 +74,25 @@
               alt="Card image cap"
             />
             <div class="card-body">
-              <h5 class="card-title"><strong>Jack Johnson</strong></h5>
+              <h5 class="card-title">
+                <strong>{{ tutor.name }}</strong>
+              </h5>
               <div class="city">City</div>
-              <button type="button" class="btn btn-light">London</button>
+              <button type="button" class="btn btn-light">
+                {{ tutor.city }}
+              </button>
               <div class="students-so-far">
                 <strong>Students so far</strong>
-                <div class="students-logos">
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col col-md-4 card-outside">
-          <div class="card" style="width: 18rem;">
-            <img
-              class="card-img-top"
-              src="../assets/img/user-photo.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title"><strong>Jack Johnson</strong></h5>
-              <div class="city">City</div>
-              <button type="button" class="btn btn-light">London</button>
-              <div class="students-so-far">
-                <strong>Students so far</strong>
-                <div class="students-logos">
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col col-md-4 card-outside">
-          <div class="card" style="width: 18rem;">
-            <img
-              class="card-img-top"
-              src="../assets/img/user-photo.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title"><strong>Jack Johnson</strong></h5>
-              <div class="city">City</div>
-              <button type="button" class="btn btn-light">London</button>
-              <div class="students-so-far">
-                <strong>Students so far</strong>
-                <div class="students-logos">
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col col-md-4 card-outside">
-          <div class="card" style="width: 18rem;">
-            <img
-              class="card-img-top"
-              src="../assets/img/user-photo.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title"><strong>Jack Johnson</strong></h5>
-              <div class="city">City</div>
-              <button type="button" class="btn btn-light">London</button>
-              <div class="students-so-far">
-                <strong>Students so far</strong>
-                <div class="students-logos">
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col col-md-4 card-outside">
-          <div class="card" style="width: 18rem;">
-            <img
-              class="card-img-top"
-              src="../assets/img/user-photo.jpg"
-              alt="Card image cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title"><strong>Jack Johnson</strong></h5>
-              <div class="city">City</div>
-              <button type="button" class="btn btn-light">London</button>
-              <div class="students-so-far">
-                <strong>Students so far</strong>
-                <div class="students-logos">
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
-                  <img
-                    src="../assets/img/student-photo.jpg"
-                    class="student-logo rounded-circle"
-                  />
+                <div
+                  class="students-logos"
+                  *ngFor="let student of tutor.students"
+                >
+                  <span data-toggle="tooltip" title="{{ student.name }}">
+                    <img
+                      src="../assets/img/student-photo.jpg"
+                      class="student-logo rounded-circle"
+                    />
+                  </span>
                 </div>
               </div>
             </div>

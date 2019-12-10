@@ -24,11 +24,8 @@ export class Api {
         return auth.token;
     }
 
-    public static get domain(): string {
+    public static get url(): string {
         return "http://localhost:3000/api/";
     }
 
-    public static get url(): string {
-        return `${this.domain}v1/`;
-    }
 }
