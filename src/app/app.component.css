@@ -1,0 +1,76 @@
+body {
+  padding-top: 3.5rem;
+}
+
+.container-head {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.subtitle {
+  margin-bottom: 5rem;
+}
+
+.navbar {
+  background-color: #e9ecef;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  color: black;
+}
+
+.signin {
+  float: right;
+}
+
+.card {
+  text-align: left;
+  background-color: #dfdfdf;
+}
+
+.city {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.students-so-far {
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.filters-sorts {
+  margin-bottom: 2rem;
+}
+
+.card-outside {
+  margin-bottom: 3rem;
+}
+
+.btn-group {
+  margin-right: 5rem;
+  margin-left: 1rem;
+}
+
+.student-logo {
+  width: 40px;
+  margin-right: 0.5rem;
+}
+
+.students-logos {
+  margin-top: 1rem;
+}
+
+.signin-button {
+  margin-left: 1rem;
+}
+
+.right {
+  margin-left: auto;
+}
+
+button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
